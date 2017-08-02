@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author tp034196
  */
-@WebServlet(name = "Welcome", urlPatterns = {"/Welcome"})
-public class Welcome extends HttpServlet {
+@WebServlet(name = "Wrong", urlPatterns = {"/Wrong"})
+public class Wrong extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,10 +38,10 @@ public class Welcome extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Welcome</title>");            
+            out.println("<title>Servlet Wrong</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Hello " + name + ", welcome to APU</h1>");
+            out.println("<h1>Sorry " +name + ", wrong password.</h1>");
             out.println("</body>");
             out.println("</html>");
         }
